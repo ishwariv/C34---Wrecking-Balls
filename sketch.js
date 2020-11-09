@@ -76,3 +76,12 @@ function mouseDragged(){
     Matter.Body.setPosition(ball.body,{x:mouseX,y:mouseY});
 }
 
+function mouseReleased(){
+    chain.fly();
+}
+
+function keyPressed(){
+    if(keyCode===32){
+        chain.attach(ball.body);
+    }
+}
